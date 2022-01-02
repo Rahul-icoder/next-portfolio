@@ -87,23 +87,7 @@ a {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
-/*project container*/
-.project-container h1{
-  font-size: 1.4rem;
-  position: relative;
-  font-weight: 600;
-}
 
-.project-container h1:after{
-  content: "";
-  position: absolute;
-  top: 33px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 55px;
-  height: 4px;
-  background-color: #0d9488;
-}
 
 /*skill css*/
 .react-container:before{
@@ -291,4 +275,42 @@ a {
   font-size: 0.7rem;
   color: #f1f5f9;
   font-weight: 600;
+}
+
+/*project container*/
+.project-container h1{
+  font-size: 1.4rem;
+  position: relative;
+  font-weight: 600;
+}
+
+.project-container h1:after{
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55px;
+  height: 4px;
+  background-color: #0d9488;
+}
+
+
+/*education container*/
+
+.education-container h1{
+  font-size: 1.4rem;
+  position: relative;
+  font-weight: 600;
+}
+
+.education-container h1:after{
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55px;
+  height: 4px;
+  background-color: #0d9488;
 }

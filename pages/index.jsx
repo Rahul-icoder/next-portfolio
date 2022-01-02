@@ -6,6 +6,7 @@ import Footer from "../components/Footer"
 import Skill from "../components/Skill"
 import About from "../components/About"
 import Project from "../components/Project"
+import Education from "../components/Education"
 export default function Home() {
   return (
     <div>
@@ -33,6 +34,11 @@ export default function Home() {
       <div className="project-container bg-gray-100 py-10">
         <h1 className="text-gray-800 text-center">PROJECTS</h1>
         <Project/>
+      </div>
+    {/*Project Section*/}
+      <div className="education-container bg-zinc-200 py-10">
+        <h1 className="text-gray-800 text-center">EDUCATION</h1>
+        <Education/>
       </div>
     {/*Footer Section*/}
       <Footer/>

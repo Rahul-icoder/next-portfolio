@@ -15,6 +15,9 @@ function About() {
 			        and feeling good while tackle chanllenges.
 			      </p>
 			  </div>
+			  <div className="flex justify-center mt-3">
+			  	<button className="text-sm text-white hover:bg-white hover:text-custom-red transition duration-500 border border-custom-red p-1 bg-custom-red">DOWNLOAD RESUME</button>
+			  </div>
 		</div>
 	)
 }

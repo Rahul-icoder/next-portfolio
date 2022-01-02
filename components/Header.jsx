@@ -18,16 +18,16 @@ function Header() {
 				</div>
 				<div className="flex items-center">
 					<nav className="uppercase text-lg lg:flex items-center hidden">
-						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-500 transition duration-500">
+						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-400 transition duration-500">
 							Home
 						</a>
-						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-500 transition duration-500">
+						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-400 transition duration-500">
 							About
 						</a>
-						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-500 transition duration-500">
-							Resume
+						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-400 transition duration-500">
+							Contact
 						</a>
-						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-500 transition duration-500">
+						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-400 transition duration-500">
 							Projects
 						</a>
 					</nav>
