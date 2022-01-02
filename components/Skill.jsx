@@ -2,56 +2,43 @@ import React from 'react'
 
 const Skill = () => {
 	return (
-		<div className="skill-container py-6 pb-16">
-			<h3 className="font-semibold text-custom-blue tracking-widest text-center text-2xl md:text-3xl mt-2">SKILLS</h3>
-			<div class="flex jusitfy-center flex-col items-center mt-8">
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">REACT JS</p>
-					<div className="relative bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4 react-conatiner">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+		<div style={{flex:0.6}} className="skill-container pb-10 sm:py-10">
+			<div class="flex jusitfy-center flex-col items-center px-5 sm:px-10 md:px-20 gap-4">
+					<div className="bg-gray-200 h-4 w-full react-container relative">
+						<div style={{width:'85%'}} className="bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">NEXT JS</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div className="bg-gray-200 h-4 w-full next-container relative">
+						<div style={{width:'80%'}}  className=" bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">JAVASCRIPT</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div  className="bg-gray-200 h-4 w-full javascript-container relative">
+						<div style={{width:'85%'}} className=" bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">HTML</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div  className="bg-gray-200 h-4 w-full html-container relative">
+						<div style={{width:'90%'}} className=" bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">CSS</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div  className="bg-gray-200 h-4 w-full css-container relative">
+						<div style={{width:'90%'}} className="bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">NODE JS</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div  className="bg-gray-200 h-4 w-full node-container relative">
+						<div style={{width:'75%'}} className="bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">PYTHON</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div  className="bg-gray-200 h-4 w-full python-container relative">
+						<div style={{width:'70%'}} className="bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">MY SQL</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div  className="bg-gray-200 h-4 w-full sql-container relative">
+						<div style={{width:'75%'}} className="bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">MONGODB</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div  className="bg-gray-200 h-4 w-full mongo-container relative">
+						<div style={{width:'85%'}} className="bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest">C++</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div className="bg-gray-200 h-4 w-full cplus-container relative">
+						<div style={{width:'80%'}} className="bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">AWS</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div  className="bg-gray-200 h-4 w-full aws-container relative">
+						<div style={{width:'60%'}} className="bg-teal-600 h-4"></div>
 					</div>
-					<p className="tracking-wide md:tracking-wider md:tracking-widest text-white">LINUX</p>
-					<div className="bg-yellow-200 h-4 w-10/12 sm:w-3/4 my-4">
-						<div className="w-10/12 bg-yellow-500 h-4"></div>
+					<div  className="bg-gray-200 h-4 w-full linux-container relative">
+						<div style={{width:'65%'}} className="bg-teal-600 h-4"></div>
 					</div>
 				</div>
 		</div>

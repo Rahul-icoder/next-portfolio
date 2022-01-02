@@ -15,7 +15,7 @@ const Footer = () => {
                                 <img src="instagram.png" alt="instagram"/>
                             </a>
                         </div>
-                        <p className="text-sm font-mono mb-2">Rahul Kushwaha @{new Date().getFullYear()}</p>
+                        <p className="text-sm font-mono mb-2">Rahul Kushwaha &#169;{new Date().getFullYear()}</p>
                 </footer>
         )
 }

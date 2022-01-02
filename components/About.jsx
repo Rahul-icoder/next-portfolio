@@ -2,29 +2,19 @@ import React from 'react'
 
 function About() {
 	return (
-		<div className="about-container py-20">
-			<figure class="md:flex rounded-xl p-8 md:p-0 w-10/12 sm:w-3/4 m-auto">
-			  <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-			    <blockquote>
-			      <p class="text-sm font-normal">
-			        Hello I'm Rahul , Software Engineer at mushinlabs from <span className="font-semibold">Jan, 2021</span>
-			        and feeling good while tackle chanllenges. lorem and feeling good while tackle chanllenges. lorem
-			        and feeling good while tackle chanllenges. lorem and feeling good while tackle chanllenges. lorem
-			        and feeling good while tackle chanllenges. lorem and feeling good while tackle chanllenges. lorem
-			        and feeling good while tackle chanllenges. lorem and feeling good while tackle chanllenges. lorem
-			        and feeling good while tackle chanllenges. lorem and feeling good while tackle chanllenges. lorem
+		<div style={{flex:'0.4'}} className="py-10 about-container flex jusitfy-center flex-col">
+			<img src="rahul.jpg" className="w-60 h-52 mx-auto profile"/>
+			  <h3 className="text-center mt-2 font-semibold text-gray-800">Who's this guy?</h3>
+			  <div className="w-80 mx-auto">
+			      <p className="text-sm text-center mt-2 text-zinc-800">
+			        Hello I'm Rahul , Software Engineer at mushinlabs
+			        and feeling good while tackle chanllenges.
 			      </p>
-			    </blockquote>
-			    <figcaption class="font-medium">
-			      <div class="text-sky-500">
-			        Rahul Kushwaha
-			      </div>
-			      <div class="text-gray-700">
-			        FullStack Engineer, MushinLabs
-			      </div>
-			    </figcaption>
+			      <p className=" text-sm text-center mt-2 text-zinc-800">
+			        Hello I'm Rahul , Software Engineer at mushinlabs
+			        and feeling good while tackle chanllenges.
+			      </p>
 			  </div>
-			</figure>
 		</div>
 	)
 }

@@ -1,6 +1,6 @@
 function Header() {
 	return (
-		<header className="h-24 sm:h-32 flex items-center z-30 w-full">
+		<header className="h-24 sm:h-32 z-20 flex items-center relative w-full">
 			<div className="container mx-auto px-6 flex items-center justify-between">
 				<div className="uppercase text-custom-white dark:text-white font-black text-3xl flex items-center">
 					<svg
@@ -18,16 +18,16 @@ function Header() {
 				</div>
 				<div className="flex items-center">
 					<nav className="uppercase text-lg lg:flex items-center hidden">
-						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-yellow-500 transition duration-500">
+						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-500 transition duration-500">
 							Home
 						</a>
-						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-yellow-500 transition duration-500">
+						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-500 transition duration-500">
 							About
 						</a>
-						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-yellow-500 transition duration-500">
+						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-500 transition duration-500">
 							Resume
 						</a>
-						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-yellow-500 transition duration-500">
+						<a href="#" className="py-2 px-6 flex text-custom-white hover:text-teal-500 transition duration-500">
 							Projects
 						</a>
 					</nav>
