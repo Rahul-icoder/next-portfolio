@@ -80,7 +80,7 @@ a {
   transform: translateX(-50%);
   width: 55px;
   height: 4px;
-  background-color: #0d9488;
+  background-color: #1f2937;
 }
 
 .about-container img{
@@ -102,7 +102,7 @@ a {
   width: 80px;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 
@@ -118,7 +118,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 .javascript-container:before{
@@ -133,7 +133,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 .html-container:before{
@@ -148,7 +148,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 .css-container:before{
@@ -163,7 +163,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 .node-container:before{
@@ -178,7 +178,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 .python-container:before{
@@ -193,7 +193,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 
@@ -209,7 +209,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 
@@ -225,7 +225,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 
@@ -241,7 +241,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 
@@ -257,7 +257,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 
@@ -273,7 +273,7 @@ a {
   justify-content: center;
   background: #14b8a6;
   font-size: 0.7rem;
-  color: #f1f5f9;
+  color: white;
   font-weight: 600;
 }
 
@@ -292,7 +292,7 @@ a {
   transform: translateX(-50%);
   width: 55px;
   height: 4px;
-  background-color: #0d9488;
+  background-color: #1f2937;
 }
 
 
@@ -312,5 +312,5 @@ a {
   transform: translateX(-50%);
   width: 55px;
   height: 4px;
-  background-color: #0d9488;
+  background-color: #1f2937;
 }

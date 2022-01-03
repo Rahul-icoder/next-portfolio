@@ -2,8 +2,7 @@ import React from 'react'
 
 const Project = () => {
 	return (
-		<div>
-			Project
+		<div className="h-32">
 		</div>
 	)
 }
