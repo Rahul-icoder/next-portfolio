@@ -1,18 +1,20 @@
+import {AiFillGithub,AiFillLinkedin,AiFillInstagram,AiTwotoneMail} from "react-icons/ai"
+import {MdEmail} from "react-icons/md"
 const Footer = () => {
         return (
                 <footer className="footer-container text-white w-full flex flex-col items-center p-2">
                         <div className="flex my-4 gap-3">
-                            <a href="#" style={{padding:'2px'}} className="rounded-full h-9 w-9">
-                                <img src="github.png" alt="github"/>
+                            <a href="#">
+                                <AiFillGithub className="text-2xl"/>
                             </a>
-                            <a href="#" style={{padding:'2px'}} className="rounded-full h-9 w-9">
-                                <img src="gmail.png" alt="email"/>
+                            <a href="#">
+                                <AiTwotoneMail className="text-2xl"/>
                             </a>
-                            <a href="#" style={{marginLeft:'2px'}} className="rounded-full h-9 w-9">
-                                <img src="linkedin.png" alt="linkedin"/>
+                            <a href="#">
+                                <AiFillLinkedin className="text-2xl"/>
                             </a>
-                            <a href="#" style={{marginLeft:'2px'}} className="rounded-full h-9 w-9">
-                                <img src="instagram.png" alt="instagram"/>
+                            <a href="#">
+                               <AiFillInstagram className="text-2xl"/>
                             </a>
                         </div>
                         <p className="text-sm font-mono mb-2">Rahul Kushwaha &#169;{new Date().getFullYear()}</p>

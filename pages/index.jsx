@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import {useEffect} from "react"
+
 import Header from "../components/Header"
 import HomePage from "../components/Home"
 import Footer from "../components/Footer"
@@ -8,6 +10,38 @@ import About from "../components/About"
 import Project from "../components/Project"
 import Education from "../components/Education"
 export default function Home() {
+  useEffect(()=>{
+    let sections = document.querySelectorAll("section")
+    let bubble = document.querySelector(".bubble")
+    const options = {
+      threshold:0.7
+    } 
+    let observer = new IntersectionObserver(navCheck,options)
+    function navCheck(entries){
+        entries.forEach(entry=>{
+          const className = entry.target.className.split(" ")[0];
+          const activeAnchor = document.querySelector(`[data-page=${className}`)
+          const coords = activeAnchor.getBoundingClientRect();
+          const directions = {
+            height:coords.height,
+            width:coords.width,
+            top:coords.top,
+            left:coords.left
+          }
+          if(entry.isIntersecting){
+            console.log(className)
+            bubble.style.setProperty('left',`${directions.left}px`)
+            bubble.style.setProperty('top',`${directions.top}px`)
+            bubble.style.setProperty('width',`${directions.width}px`)
+             bubble.style.setProperty('height',`${directions.height}px`)
+          }
+        })
+    }
+    console.log(sections)
+    sections.forEach(section=>{
+      observer.observe(section)
+    })
+  },[])
   return (
     <div>
       <Head>
@@ -16,30 +50,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     {/*Home Section*/}
-      <div className="home-container">
+      <section id="home-container" className="home-container">
         <video src="home.mp4"  autoPlay muted loop>
         </video>
         <Header/>
         <HomePage/>
-      </div>
+      </section>
     {/*About Section*/}
-      <div className="about-skill-container bg-custom-gray py-10">
+      <section id="about-skill-container" className="about-skill-container bg-custom-gray py-10">
         <h1 className="text-gray-800 text-center">ABOUT</h1>
-        <div className="flex flex-col sm:flex-row">
+        <div className="flex flex-col md:flex-row">
           <About/>
           <Skill/>
         </div>
-      </div>
+      </section>
     {/*Project Section*/}
-      <div className="project-container bg-gray-100 py-10">
+      <section id="project-container" className="project-container bg-custom-gray py-10">
         <h1 className="text-gray-800 text-center">PROJECTS</h1>
         <Project/>
-      </div>
-    {/*Project Section*/}
-      <div className="education-container bg-zinc-200 py-10">
-        <h1 className="text-gray-800 text-center">EDUCATION</h1>
-        <Education/>
-      </div>
+      </section>
     {/*Footer Section*/}
       <Footer/>
     </div>
