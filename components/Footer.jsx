@@ -5,9 +5,9 @@ const Footer = () => {
                 <footer className="footer-container text-white w-full flex flex-col items-center p-2">
                         <div className="flex my-4 gap-3">
                             <a href="#">
-                                <AiFillGithub className="text-2xl"/>
+                                <AiFillGithub className="text-2xl cursor-pointer"/>
                             </a>
-                            <a href="#">
+                            <a href="#" className="cursor-pointer">
                                 <AiTwotoneMail className="text-2xl"/>
                             </a>
                             <a href="#">

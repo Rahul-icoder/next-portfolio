@@ -59,19 +59,7 @@ header .bubble{
 
 .footer-container{
   position: relative;
-  background: url('/footer.jpg') no-repeat center center/cover;
-  z-index: -1;
-}
-
-.footer-container:after{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background-color: #00121b;
 }
 
 /*about container*/
@@ -79,6 +67,7 @@ header .bubble{
   font-size: 1.4rem;
   position: relative;
   font-weight: 600;
+      margin-bottom: 2rem;
 }
 
 .about-skill-container h1:after{
@@ -113,6 +102,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 
 .next-container:before{
@@ -129,6 +119,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 .javascript-container:before{
   content: 'JAVASCRIPT';
@@ -144,6 +135,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 .html-container:before{
   content: 'HTML';
@@ -159,6 +151,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 .css-container:before{
   content: 'CSS';
@@ -174,6 +167,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 .node-container:before{
   content: 'NODEJS';
@@ -189,6 +183,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 .python-container:before{
   content: 'PYTHON';
@@ -204,6 +199,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 
 .sql-container:before{
@@ -220,6 +216,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 
 .mongo-container:before{
@@ -236,6 +233,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 
 .cplus-container:before{
@@ -252,6 +250,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 
 .aws-container:before{
@@ -268,6 +267,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 
 .linux-container:before{
@@ -284,6 +284,7 @@ header .bubble{
   font-size: 0.7rem;
   color: white;
   font-weight: 600;
+  letter-spacing: 0.8px;
 }
 
 /*project container*/
@@ -323,13 +324,13 @@ header .bubble{
 
 
 .card-title{
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: black;
 }
 
 .card-demo{
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: black;
 }

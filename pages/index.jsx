@@ -58,7 +58,6 @@ export default function Home() {
       </section>
     {/*About Section*/}
       <section id="about-skill-container" className="about-skill-container bg-custom-gray py-10">
-        <h1 className="text-gray-800 text-center">ABOUT</h1>
         <div className="flex flex-col md:flex-row">
           <About/>
           <Skill/>
