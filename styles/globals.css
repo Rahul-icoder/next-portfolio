@@ -57,6 +57,25 @@ header .bubble{
   transform: translate(-50%,-50%);
 }
 
+.home-container .container h2{
+   width: 21ch;
+  animation: typing 3s steps(21) infinite, blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 .footer-container{
   position: relative;
   background-color: #00121b;
@@ -67,7 +86,7 @@ header .bubble{
   font-size: 1.4rem;
   position: relative;
   font-weight: 600;
-      margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about-skill-container h1:after{
@@ -312,11 +331,11 @@ header .bubble{
 }
 .card{
   aspect-ratio: 1/1;
+  transition: opacity 2s linear
 }
 .card-content{
-  background: white;
-  box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
   display: flex;
+  box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
   justify-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
