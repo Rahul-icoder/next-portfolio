@@ -11,7 +11,7 @@ function Home() {
 		                <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mx-auto text-white text-center">
 		                    Full Stack Developer
 		                </h2>
-		                <div className="justify-center gap-1 md:gap-2 mt-10 flex">
+		                <div className="justify-center gap-1 md:gap-2 mt-16 flex">
 		                	<a href="#">
                                 <div className="home-icon">
                                     <AiFillGithub  />
