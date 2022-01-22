@@ -12,7 +12,7 @@ export default function Home() {
     let sections = document.querySelectorAll("section")
     let bubble = document.querySelector(".bubble")
     const options = {
-      threshold:0.5
+      threshold:0.3
     } 
     let observer = new IntersectionObserver(navCheck,options)
     function navCheck(entries){
@@ -27,6 +27,7 @@ export default function Home() {
             left:coords.left
           }
           if(entry.isIntersecting){
+            console.log(entry.target)
             bubble.style.setProperty('left',`${directions.left}px`)
             bubble.style.setProperty('top',`${directions.top}px`)
             bubble.style.setProperty('width',`${directions.width}px`)
