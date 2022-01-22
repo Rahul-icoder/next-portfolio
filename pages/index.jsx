@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import {useEffect} from "react"
-
 import Header from "../components/Header"
 import HomePage from "../components/Home"
 import Footer from "../components/Footer"

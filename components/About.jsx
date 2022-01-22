@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Image from "next/image"
 function About() {
 	return (
 		<div style={{flex:'0.5'}} className="py-10 about-container flex jusitfy-center flex-col">
 		  <h1 className="text-gray-800 text-center">ABOUT</h1>
-			<img src="rahul.jpg" className="w-60 h-60 mx-auto profile"/>
+			<Image src="rahul.jpg" className="w-60 h-60 mx-auto profile" alt="profile"/>
 			  <h3 className="text-center mt-2 font-semibold text-gray-800">Who's this guy?</h3>
 			  <div className="w-80 mx-auto">
 			      <p className="text-sm text-center mt-2 text-zinc-800">
