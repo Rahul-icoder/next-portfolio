@@ -14,7 +14,7 @@ export default function Home() {
     let sections = document.querySelectorAll("section")
     let bubble = document.querySelector(".bubble")
     const options = {
-      threshold:0.7
+      threshold:0.5
     } 
     let observer = new IntersectionObserver(navCheck,options)
     function navCheck(entries){
@@ -29,7 +29,6 @@ export default function Home() {
             left:coords.left
           }
           if(entry.isIntersecting){
-            console.log(className)
             bubble.style.setProperty('left',`${directions.left}px`)
             bubble.style.setProperty('top',`${directions.top}px`)
             bubble.style.setProperty('width',`${directions.width}px`)
@@ -50,8 +49,8 @@ export default function Home() {
       </Head>
     {/*Home Section*/}
       <section id="home-container" className="home-container">
-        <video src="home.mp4"  autoPlay muted loop>
-        </video>
+        {/*<video src="home.mp4"  autoPlay muted loop>
+        </video>*/}
         <Header/>
         <HomePage/>
       </section>

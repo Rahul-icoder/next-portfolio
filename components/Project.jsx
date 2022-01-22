@@ -3,27 +3,30 @@ import React from 'react'
 const Project = () => {
 	return (
 		<div className="project-grid px-6 py-10">
-			<div className="card relative group">
-				<img src="url-shortener.jpg" alt="project" className="card-img"/>
-				<div className="card-content absolute bg-gray-100 w-full py-6 bottom-0 opacity-0 group-hover:opacity-100 transition duration-500">
-					<h2 className="card-title">Url Shortener</h2>
-					<a href="" className="card-demo">Demo</a>
-				</div>
-			</div>
-			<div className="card relative group transition duration-500">
-				<img src="url-shortener.jpg" alt="project" className="card-img"/>
-				<div className="card-content absolute bg-gray-100 w-full py-6 bottom-0 opacity-0  group-hover:opacity-100 transition duration-500 ">
-					<h2 className="card-title">Transformer</h2>
-					<a href="" className="card-demo">Demo</a>
-				</div>
-			</div>
-			<div className="card relative group ">
-				<img src="url-shortener.jpg" alt="project" className="card-img"/>
-				<div className="card-content absolute bg-gray-100 w-full py-6 bottom-0 flex opacity-0  group-hover:opacity-100 transition duration-500">
-					<h2 className="card-title">Plotter</h2>
-					<a href="" className="card-demo">Demo</a>
-				</div>
-			</div>
+			<div class="card">
+			<img class="card-img" src="https://images.unsplash.com/photo-1506318164473-2dfd3ede3623?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3300&amp;q=80" alt="Canyons"/>
+		      <div class="card-content">
+		        <h2 class="card-header text-xl text-gray-800">Url Shortener</h2>
+		        <p class="card-text text-sm">Sunsets over the stunning Utah Canyonlands, is truly something much more than incredible.</p>
+		        <button class="card-btn font-semibold">Learn more <span>&rarr;</span></button>
+		      </div>
+		    </div>
+		    <div class="card">
+			<img class="card-img" src="https://images.unsplash.com/photo-1506318164473-2dfd3ede3623?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3300&amp;q=80" alt="Canyons"/>
+		      <div class="card-content">
+		        <h2 class="card-header text-xl text-gray-800">E-Voting</h2>
+		        <p class="card-text text-sm">Sunsets over the stunning Utah Canyonlands, is truly something much more than incredible.</p>
+		        <button class="card-btn font-semibold">Learn more <span>&rarr;</span></button>
+		      </div>
+		    </div>
+		    <div class="card">
+			<img class="card-img" src="https://images.unsplash.com/photo-1506318164473-2dfd3ede3623?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3300&amp;q=80" alt="Canyons"/>
+		      <div class="card-content">
+		        <h2 class="card-header text-xl text-gray-800">Chat Application</h2>
+		        <p class="card-text text-sm">Sunsets over the stunning Utah Canyonlands, is truly something much more than incredible.</p>
+		        <button class="card-btn font-semibold">Learn more <span>&rarr;</span></button>
+		      </div>
+		    </div>
 		</div>
 	)
 }

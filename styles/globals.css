@@ -24,7 +24,7 @@ a:hover { text-shadow:0px 0px 5px #fdfdfd; }
 header .bubble{
   position: absolute;
   z-index: -2;
-  background: orange;
+  background: #0d9488;
   transition: all 0.5s ease-out;
 }
 .home-container {
@@ -32,6 +32,7 @@ header .bubble{
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background: url('/homebg.jpg')  center / cover no-repeat;
   font-family: 'Fira Code', monospace;
 }
 
@@ -46,7 +47,7 @@ header .bubble{
   background: rgba(0, 0, 0, 0.6);
 }
 
-.home-container video{
+/*.home-container video{
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
@@ -55,6 +56,19 @@ header .bubble{
   z-index: 1;
   left: 50%;
   transform: translate(-50%,-50%);
+}*/
+
+.home-icon{
+  background-color: #e3dfdf;
+  cursor: pointer;
+  font-size: 1.6rem;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  width: 55px;
+  color: #0b7a7a;
 }
 
 .home-container .container h2{
@@ -76,10 +90,7 @@ header .bubble{
     border-color: transparent
   }
 }
-.footer-container{
-  position: relative;
-  background-color: #00121b;
-}
+
 
 /*about container*/
 .about-skill-container h1{
@@ -326,36 +337,96 @@ header .bubble{
 
 .project-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
-  gap: 0.51rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  gap: 0.8rem;
 }
+
 .card{
-  aspect-ratio: 1/1;
-  transition: opacity 2s linear
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
 }
-.card-content{
-  display: flex;
-  box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
-  justify-content: space-between;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-
-.card-title{
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: black;
+.card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
 }
 
-.card-demo{
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: black;
-}
-
-.card-img{
+.card-img {
+  display: block;
   width: 100%;
-  aspect-ratio: 1/1;
+  height: 14rem;
   object-fit: cover;
+}
+.card-content {
+  padding: 1.2rem 1.2rem;
+}
+.card-header {
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 0.5rem;
+}
+.card-text {
+  letter-spacing: 0.6px;
+  line-height: 1.5;
+  color: #3d3d3d;
+  margin-bottom: 1.6rem;
+}
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #e6ecff;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.card-btn:hover, .card-btn:active {
+  background-color: #dce4ff;
+}
+.card-btn:hover span, .card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+/* footer section */
+
+.footer-container{
+  position: relative;
+  background-color: #1b242f;
+}
+
+.footer-icon{
+    background: #262f38;
+    cursor: pointer;
+    font-size: 1.6rem;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    width: 55px;
+}
+.copyright-text{
+  color: #8f9aa7;
+}
+
+.copyright-text span{
+  color: #e31b6d;
+}
+
+@media only screen and (max-width: 768px){
+  .home-icon{
+    font-size: 1.2rem;
+    height: 45px;
+    margin: 0 15px;
+    width: 45px;
+  }
 }
