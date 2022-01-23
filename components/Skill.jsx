@@ -1,12 +1,11 @@
-import React from 'react'
-
+import React from 'react';
 const Skill = () => {
 	return (
 		<div style={{flex:0.5}} className="skill-container pb-10 md:py-10">
 			<h1 className="text-gray-800 text-center">SKILLS</h1>
 			<div className="flex jusitfy-center flex-col items-center px-5 sm:px-10 gap-4 font-mono">
 					<div className="bg-gray-200 h-5 w-full react-container relative">
-						<div style={{width:'85%'}} className="bg-teal-600 h-5 transition ease-in-out delay-150 "></div>
+						<div style={{width:'85%'}} className="bg-teal-600 h-5 transition ease-in-out delay-150"></div>
 						<span className="absolute text-xs right-1 text-gray-500" style={{top:'2px'}}>85%</span>	
 					</div>
 					<div className="bg-gray-200 h-5 w-full next-container relative">

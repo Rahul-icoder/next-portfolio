@@ -6,6 +6,7 @@
 html,
 body {
  font-family: 'Varela', sans-serif;
+ overflow-x: hidden;
 }
 
 * {
@@ -71,7 +72,7 @@ header .bubble{
   color: #0b7a7a;
 }
 
-.home-container .container h2{
+/*.home-container .container h2{
    width: 21ch;
   animation: typing 3s steps(21) infinite, blink .5s step-end infinite alternate;
   white-space: nowrap;
@@ -89,10 +90,11 @@ header .bubble{
   50% {
     border-color: transparent
   }
-}
+}*/
 
 
 /*about container*/
+
 .about-skill-container h1{
   font-size: 1.4rem;
   position: relative;
@@ -343,7 +345,6 @@ header .bubble{
 
 .card{
   background-color: #fff;
-  border-radius: 0.4rem;
   overflow: hidden;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   transition: 0.2s;
@@ -381,7 +382,6 @@ header .bubble{
   color: #3363ff;
   background-color: #e6ecff;
   border: none;
-  border-radius: 0.4rem;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -421,6 +421,16 @@ header .bubble{
 .copyright-text span{
   color: #e31b6d;
 }
+
+/*whatsapp section*/
+.whatsapp-container{
+  position: fixed;
+  z-index: 999;
+  right: 1.3rem;
+  bottom: 1.3rem;
+  color: #4FCE5D;
+}
+
 
 @media only screen and (max-width: 768px){
   .home-icon{

@@ -7,6 +7,7 @@ import Skill from "../components/Skill"
 import About from "../components/About"
 import Project from "../components/Project"
 import Education from "../components/Education"
+import {AiOutlineWhatsApp} from 'react-icons/ai'
 export default function Home() {
   useEffect(()=>{
     let sections = document.querySelectorAll("section")
@@ -27,7 +28,6 @@ export default function Home() {
             left:coords.left
           }
           if(entry.isIntersecting){
-            console.log(entry.target)
             bubble.style.setProperty('left',`${directions.left}px`)
             bubble.style.setProperty('top',`${directions.top}px`)
             bubble.style.setProperty('width',`${directions.width}px`)
@@ -67,6 +67,11 @@ export default function Home() {
       </section>
     {/*Footer Section*/}
       <Footer/>
+      <div className="whatsapp-container">
+        <a href="https://api.whatsapp.com/send?phone=+918210078058" target="_blank">
+          <AiOutlineWhatsApp className="text-5xl cursor-pointer"/>
+        </a>
+      </div>
     </div>
   )
 }
