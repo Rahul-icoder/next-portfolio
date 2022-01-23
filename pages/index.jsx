@@ -68,7 +68,7 @@ export default function Home() {
     {/*Footer Section*/}
       <Footer/>
       <div className="whatsapp-container">
-        <a href="https://api.whatsapp.com/send?phone=+918210078058" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=+918210078058" target="_blank" rel="noreferrer">
           <AiOutlineWhatsApp className="text-5xl cursor-pointer"/>
         </a>
       </div>
