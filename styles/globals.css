@@ -20,6 +20,7 @@ a {
   text-decoration: none;
 }
 
+
 header .bubble{
   position: absolute;
   z-index: -2;
@@ -352,8 +353,8 @@ header .bubble{
   width: 100%;
   padding: 0.8rem;
   text-align: center;
-  color: #fff;
-  background-color: #e31b6d;
+  color: #3363ff;
+  background-color:  #e6ecff;
   border: none;
   transition: 0.2s;
   cursor: pointer;
@@ -362,8 +363,12 @@ header .bubble{
   margin-left: 1rem;
   transition: 0.2s;
 }
+.card-btn:hover, .card-btn:active {
+  background-color: #dce4ff;
+}
 .card-btn:hover span, .card-btn:active span {
   margin-left: 1.5rem;
+
 }
 
 /* footer section */
