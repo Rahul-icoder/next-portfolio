@@ -16,7 +16,7 @@ function About() {
 			      </p>
 			  </div>
 			  <div className="flex justify-center mt-3">
-			  	<button className="text-sm p-1 text-white tracking-wide hover:bg-white hover:text-teal-600 transition duration-500 border border-teal-600 p-2 bg-teal-600">DOWNLOAD CV</button>
+			  	<button className="text-sm p-1 text-white tracking-wide hover:bg-white hover:text-custom-pink transition duration-500 border border-custom-pink p-2 bg-custom-pink">DOWNLOAD CV</button>
 			  </div>
 		</div>
 	)
