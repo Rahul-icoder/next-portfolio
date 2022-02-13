@@ -45,7 +45,7 @@ export default function Home() {
             bubble.style.setProperty('left',`${directions.left}px`)
             bubble.style.setProperty('top',`45px`)
             bubble.style.setProperty('width',`${directions.width}px`)
-             bubble.style.setProperty('height',`5px`)
+             bubble.style.setProperty('height',`4px`)
           }
         })
     }
@@ -62,20 +62,18 @@ export default function Home() {
       </Head>
     {/*Home Section*/}
       <section id="home-container" className="home-container">
-        {/*<video src="home.mp4"  autoPlay muted loop>
-        </video>*/}
         <Header/>
         <HomePage/>
       </section>
     {/*About Section*/}
-      <section id="about-skill-container" className="about-skill-container py-10" >
+      <section id="about-skill-container" className="about-skill-container py-10 bg-gray-50" >
         <div className="flex flex-col md:flex-row">
           <About/>
           <Skill/>
         </div>
       </section>
     {/*Project Section*/}
-      <section id="project-container" className="project-container py-10">
+      <section id="project-container" className="project-container py-10 bg-gray-50">
         <h1 className="text-gray-800 text-center">PROJECTS</h1>
         <Project/>
       </section>
