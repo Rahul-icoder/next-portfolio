@@ -40,7 +40,7 @@ const Skill = () => {
 						<div style={{width:'85%'}} className="bg-teal-600 h-5"></div>
 						<span className="absolute text-xs right-1 text-gray-500" style={{top:'2px'}}>85%</span>	
 					</div>
-					<div className="bg-gray-200 h-5 w-full cplus-container relative">
+					<div className="bg-gray-200 h-5 w-full c-container relative">
 						<div style={{width:'80%'}} className="bg-teal-600 h-5"></div>
 						<span className="absolute text-xs right-1 text-gray-500" style={{top:'2px'}}>80%</span>	
 					</div>

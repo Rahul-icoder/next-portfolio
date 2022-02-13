@@ -242,8 +242,8 @@ header .bubble{
   letter-spacing: 0.8px;
 }
 
-.cplus-container:before{
-  content: 'C++';
+.c-container:before{
+  content: 'C';
   position: absolute;
   top: 0;
   left: 0;

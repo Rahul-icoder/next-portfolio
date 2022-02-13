@@ -8,7 +8,9 @@ const Project = () => {
 		        <h2 className="card-header text-xl text-gray-800">Partdekho</h2>
 		        <p className="card-text text-sm">Developed partdekho.com, an ecommerce web application created using MERN stack. In Which customers
 can buy premium automobiles parts.</p>
-		        <button className="card-btn">LEARN MORE <span>&rarr;</span></button>
+				<a href="https://partdekho.com" target="_blank">
+		        	<button className="card-btn">LEARN MORE <span>&rarr;</span></button>
+		        </a>
 		      </div>
 		    </div>
 			<div className="card">
@@ -17,17 +19,19 @@ can buy premium automobiles parts.</p>
 		        <h2 className="card-header text-xl text-gray-800">Url Shortener</h2>
 		        <p className="card-text text-sm">It working is by taking a long URL to create a short URL. And anyone
 who can share this URL will be redirected to the original URL.</p>
-		        <button className="card-btn">LEARN MORE <span>&rarr;</span></button>
+		        <a href="https://rahly.herokuapp.com" target="_blank">
+		        	<button className="card-btn">LEARN MORE <span>&rarr;</span></button>
+		        </a>
 		      </div>
 		    </div>
 		    <div className="card">
 			<img className="card-img" src="project2.png" alt="project"/>
 		      <div className="card-content">
 		        <h2 className="card-header text-xl text-gray-800">Mushin Aqua</h2>
-		        <p className="card-text text-sm">Developed auditing software using MERN stack to check Honda compliance norms under 6 months.
+		        <p className="card-text text-sm">Developed auditing software using MERN stack, to check Honda compliance norms under 6 months.
 		        Which has two types of user Admin and Supervisor.
 </p>
-		        <button className="card-btn">LEARN MORE <span>&rarr;</span></button>
+		        <button className="card-btn">No Link <span>&rarr;</span></button>
 		      </div>
 		    </div>
 		    
