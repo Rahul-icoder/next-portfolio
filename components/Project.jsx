@@ -8,7 +8,7 @@ const Project = () => {
 		        <h2 className="card-header text-xl text-gray-800">Partdekho</h2>
 		        <p className="card-text text-sm">Developed partdekho.com, an ecommerce web application created using MERN stack. In Which customers
 can buy premium automobiles parts.</p>
-				<a href="https://partdekho.com" target="_blank">
+				<a href="https://partdekho.com" target="noreferrer">
 		        	<button className="card-btn">LEARN MORE <span>&rarr;</span></button>
 		        </a>
 		      </div>
@@ -19,7 +19,7 @@ can buy premium automobiles parts.</p>
 		        <h2 className="card-header text-xl text-gray-800">Url Shortener</h2>
 		        <p className="card-text text-sm">It working is by taking a long URL to create a short URL. And anyone
 who can share this URL will be redirected to the original URL.</p>
-		        <a href="https://rahly.herokuapp.com" target="_blank">
+		        <a href="https://rahly.herokuapp.com" target="noreferrer">
 		        	<button className="card-btn">LEARN MORE <span>&rarr;</span></button>
 		        </a>
 		      </div>
