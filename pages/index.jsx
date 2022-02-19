@@ -58,6 +58,7 @@ export default function Home() {
       <Head>
         <title>Rahul Kushwaha</title>
         <meta name="description" content="rahul kushwaha portfolio and profile" />
+        <meta name="google-site-verification" content="jI5Zjc4zTse0Dr8hGlpmZZoFkZ_bNzmgYmLp2bl8THY" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
     {/*Home Section*/}
