@@ -6,9 +6,9 @@ const SkillComponent = ({ item }) => {
       <img
         src={`skill-image/${item.fileName}`}
         alt={item.name}
-        className="h-16 w-16"
+        className="h-12 w-12 sm:h-16 sm:w-16"
       />
-      <p>{item.name}</p>
+      <p className="text-xs text-gray-500 text-center mt-1">{item.name}</p>
     </div>
   );
 };

@@ -12,10 +12,10 @@ const Project = () => {
           <div className="flex items-center  gap-2 mt-5">
             <AiFillProject />
 
-            <h2 className=" text-xl text-gray-700">Partdekho</h2>
+            <h2 className=" text-xl text-gray-600">Partdekho</h2>
           </div>
           <div className="my-3">
-            <p className=" text-base text-gray-500">
+            <p className=" text-base text-gray-500 tracking-wide">
               Developed partdekho.com, an ecommerce web application created
               using ReactJS and NodeJS.
             </p>
@@ -25,12 +25,12 @@ const Project = () => {
         <div className="card">
           <div className="flex items-center  gap-2 mt-5">
             <AiFillProject />
-            <h2 className="text-xl text-gray-700">Shortener Url</h2>
+            <h2 className="text-xl text-gray-600">Shortener Url</h2>
           </div>
           <div className="my-3">
-            <p className=" text-base text-gray-500">
-              It working is by taking a long URL to create a short URL. And
-              anyone.
+            <p className=" text-base text-gray-500 tracking-wide">
+              A simple url shortener developed for personal use developed in
+              NodeJS , EJS and MongoDB.
             </p>
           </div>
         </div>
@@ -38,10 +38,10 @@ const Project = () => {
         <div className="card">
           <div className="flex items-center gap-2 mt-5">
             <AiFillProject />
-            <h2 className=" text-xl text-gray-700">Mushin Aqua</h2>
+            <h2 className=" text-xl text-gray-600">Mushin Aqua</h2>
           </div>
           <div className="my-3">
-            <p className=" text-base text-gray-500">
+            <p className=" text-base text-gray-500 tracking-wide">
               Developed auditing software using MERN stack, to check Honda
               compliance norms under 6 months.
             </p>

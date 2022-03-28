@@ -8,7 +8,10 @@
     @apply flex justify-center items-center;
   }
   .home-icon {
-    @apply bg-custom-pink h-12 w-12 sm:h-14 sm:w-14 text-white text-2xl center-item;
+    @apply bg-custom-pink h-12 w-12 sm:h-14 sm:w-14 text-white text-2xl center-item rounded-full hover:bg-white hover:border hover:border-custom-pink hover:text-custom-pink transition duration-500;
+  }
+  .footer-icon {
+    @apply bg-custom-black h-14 w-14 text-white text-2xl center-item hover:bg-white hover:border hover:border-custom-black hover:text-custom-black transition duration-500;
   }
 }
 
