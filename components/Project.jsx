@@ -3,10 +3,10 @@ import { AiFillProject } from "react-icons/ai";
 const Project = () => {
   return (
     <div className=" px-6 py-10">
-      <h1 className="text-gray-800 text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide">
+      <h1 className="text-gray-800 uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide">
         Projects 🖥
       </h1>
-      <div className="project-grid mt-8">
+      <div className="project-grid mt-12">
         {/* Project One */}
         <div className="card">
           <div className="flex items-center  gap-2 mt-5">

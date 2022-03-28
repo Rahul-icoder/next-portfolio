@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@layer components {
+  .center-item {
+    @apply flex justify-center items-center;
+  }
+  .home-icon {
+    @apply bg-custom-pink h-12 w-12 sm:h-14 sm:w-14 text-white text-2xl center-item;
+  }
+}
+
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -23,7 +33,7 @@ a {
   position: relative;
   width: 100%;
   overflow: hidden;
-  font-family: "Fira Code", monospace;
+  /* font-family: "Fira Code", monospace; */
 }
 
 .home-container p span {
@@ -32,242 +42,7 @@ a {
 
 /*sill container*/
 
-.skill-container h1 {
-  font-size: 1.4rem;
-  position: relative;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-
-.skill-container h1:after {
-  content: "";
-  position: absolute;
-  top: 33px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 55px;
-  height: 4px;
-  background-color: #1f2937;
-}
-
-/*skill css*/
-.react-container:before {
-  content: "REACTJS";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 80px;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-
-.next-container:before {
-  content: "NEXTJS";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-.javascript-container:before {
-  content: "JAVASCRIPT";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-.html-container:before {
-  content: "HTML";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-.css-container:before {
-  content: "CSS";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-.node-container:before {
-  content: "NODEJS";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-.python-container:before {
-  content: "PYTHON";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-
-.sql-container:before {
-  content: "SQL";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-
-.mongo-container:before {
-  content: "MONGODB";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-
-.c-container:before {
-  content: "C";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-
-.aws-container:before {
-  content: "AWS";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-
-.linux-container:before {
-  content: "LINUX";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #14b8a6;
-  font-size: 0.7rem;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-
 /*project container*/
-.project-container h1 {
-  font-size: 1.4rem;
-  position: relative;
-  font-weight: 600;
-}
-
-.project-container h1:after {
-  content: "";
-  position: absolute;
-  top: 33px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 55px;
-  height: 4px;
-  background-color: #1f2937;
-}
-
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -329,13 +104,4 @@ a {
   right: 1.3rem;
   bottom: 1.3rem;
   color: #4fce5d;
-}
-
-@media only screen and (max-width: 768px) {
-  .home-icon {
-    font-size: 1.2rem;
-    height: 45px;
-    margin: 0 15px;
-    width: 45px;
-  }
 }

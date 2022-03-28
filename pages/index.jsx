@@ -29,15 +29,15 @@ export default function Home() {
         <HomePage />
       </section>
       {/*About Section*/}
-      <section>
+      <section className="pb-10">
         <About />
       </section>
       {/* Skill Section */}
-      <section>
+      <section className="pb-10">
         <Skill />
       </section>
       {/*Project Section*/}
-      <section className="bg-gray-50">
+      <section className="pb-10">
         <Project />
       </section>
       {/*Footer Section*/}
