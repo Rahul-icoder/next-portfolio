@@ -1,24 +1,24 @@
-import React from 'react'
+import React from "react";
 function About() {
-	return (
-		<div style={{flex:'0.5'}} className="py-10 about-container flex jusitfy-center flex-col">
-		  <h1 className="text-gray-800 text-center">ABOUT</h1>
-			<img src="rahul.jpg" className="w-56 h-56 mx-auto profile" alt="profile"/>
-			  <div className="w-80 mx-auto">
-			      <p className="text-sm text-center mt-2 text-zinc-800">
-			        Hi 👋 I'm Rahul. I have completed my graduation with a Bachelor of Computer Applications and pursuing MCA from IGNOU.
-			      </p>
-			      <p className=" text-sm text-center mt-2 text-zinc-800">
-			        Aside from that, I work as a full-stack developer at Mushin Innovation Labs. My expertise is in creating web applications using  Reactjs, Nodejs, and MongoDB.
-			      </p>
-			  </div>
-			  <div className="flex justify-center mt-3">
-			  	<a href="resume.pdf" target="_blank" rel="noreferrer">
-			  		<button className="text-xs p-1 text-white tracking-wide hover:bg-white hover:text-custom-pink transition duration-500 border border-custom-pink p-2 bg-custom-pink">DOWNLOAD CV</button>
-			  	</a>
-			  </div>
-		</div>
-	)
+  return (
+    <section className="py-8 px-6 sm:px-10">
+      <div className="flex mt-10 justify-center items-center gap-4 md:gap-20 flex-col-reverse md:flex-row md:items-start">
+        <img src="aboutme.svg" alt="aboutme" className="h-96" />
+        <div className="w-full md:w-6/12 md:flex-row">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide">
+            About Me 🧓
+          </h2>
+          <p className="text-base md:text-lg text-left mt-8 text-gray-500">
+            Hi 👋 I'm Rahul. I have completed my graduation with a Bachelor of
+            Computer Applications and pursuing MCA from IGNOU.Aside from that, I
+            work as a full-stack developer at Mushin Innovation Labs. My
+            expertise is in creating web applications using Reactjs, Nodejs, and
+            MongoDB.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default About
+export default About;
