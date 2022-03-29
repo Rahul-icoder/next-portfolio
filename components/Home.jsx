@@ -56,7 +56,7 @@ function Home() {
           </div>
           <div className="flex justify-center mt-10">
             <a href="resume.pdf" target="_blank" rel="noreferrer">
-              <button className="text-sm p-4 rounded-md hover:translate-y-1 scale-90 text-white tracking-wider hover:bg-white hover:text-purple-900 transition duration-500 border border-purple-900 p-2 bg-purple-900">
+              <button className="text-sm p-4 font-semibold rounded-md hover:translate-y-1 scale-90 text-white tracking-wider hover:bg-white hover:text-purple-900 transition duration-500 border border-purple-900 p-2 bg-purple-900">
                 DOWNLOAD RESUME
               </button>
             </a>

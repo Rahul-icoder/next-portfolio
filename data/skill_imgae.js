@@ -43,6 +43,7 @@ export const imageObject = [
   {
     id: 9,
     fileName: "sass.svg",
+    name: "Sass",
   },
   {
     id: 10,

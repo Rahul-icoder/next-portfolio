@@ -9,7 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="footer-container text-white w-full flex flex-col items-center p-2">
-      <div className="flex my-8 mt-20 gap-1 ">
+      <div className="flex my-8 mt-20 gap-6">
         <a
           href="https://www.github.com/Rahul-icoder"
           target="_blank"

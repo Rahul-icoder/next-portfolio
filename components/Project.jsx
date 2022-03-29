@@ -3,10 +3,10 @@ import { AiFillProject } from "react-icons/ai";
 const Project = () => {
   return (
     <div className=" px-6 py-10">
-      <h1 className="text-gray-800 uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide">
+      <h1 className="text-gray-800 uppercase text-2xl sm:text-3xl text-center md:text-left md:text-4xl lg:text-5xl tracking-wide">
         Projects 🖥
       </h1>
-      <div className="project-grid mt-12">
+      <div className="project-grid mt-8 md:mt-12">
         {/* Project One */}
         <div className="card">
           <div className="flex items-center  gap-2 mt-5">
@@ -15,7 +15,7 @@ const Project = () => {
             <h2 className=" text-xl text-gray-600">Partdekho</h2>
           </div>
           <div className="my-3">
-            <p className=" text-base text-gray-500 tracking-wide">
+            <p className=" text-base text-gray-500">
               Developed partdekho.com, an ecommerce web application created
               using ReactJS and NodeJS.
             </p>
@@ -28,7 +28,7 @@ const Project = () => {
             <h2 className="text-xl text-gray-600">Shortener Url</h2>
           </div>
           <div className="my-3">
-            <p className=" text-base text-gray-500 tracking-wide">
+            <p className=" text-base text-gray-500">
               A simple url shortener developed for personal use developed in
               NodeJS , EJS and MongoDB.
             </p>
@@ -41,7 +41,7 @@ const Project = () => {
             <h2 className=" text-xl text-gray-600">Mushin Aqua</h2>
           </div>
           <div className="my-3">
-            <p className=" text-base text-gray-500 tracking-wide">
+            <p className=" text-base text-gray-500">
               Developed auditing software using MERN stack, to check Honda
               compliance norms under 6 months.
             </p>
