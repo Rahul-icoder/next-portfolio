@@ -8,7 +8,7 @@ const Project = () => {
       </h1>
       <div className="project-grid mt-8 md:mt-12">
         {/* Project One */}
-        <div className="card">
+        <div className="card h-44">
           <div className="flex items-center  gap-2 mt-5">
             <AiFillProject />
 
@@ -22,28 +22,28 @@ const Project = () => {
           </div>
         </div>
         {/* Project Two */}
-        <div className="card">
+        <div className="card h-44">
           <div className="flex items-center  gap-2 mt-5">
             <AiFillProject />
             <h2 className="text-xl text-gray-600">Shortener Url</h2>
           </div>
           <div className="my-3">
             <p className=" text-base text-gray-500">
-              A simple url shortener developed for personal use developed in
-              NodeJS , EJS and MongoDB.
+              A simple url shortener exactly like bitly, developed in NodeJS,
+              EJS and MongoDB.
             </p>
           </div>
         </div>
         {/* Project Three */}
-        <div className="card">
+        <div className="card h-44">
           <div className="flex items-center gap-2 mt-5">
             <AiFillProject />
-            <h2 className=" text-xl text-gray-600">Mushin Aqua</h2>
+            <h2 className=" text-xl text-gray-600">Node-Music</h2>
           </div>
           <div className="my-3">
             <p className=" text-base text-gray-500">
-              Developed auditing software using MERN stack, to check Honda
-              compliance norms under 6 months.
+              This web app developed in NodeJS and you change song remotely
+              through different device.
             </p>
           </div>
         </div>

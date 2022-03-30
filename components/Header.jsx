@@ -1,8 +1,21 @@
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
+import { useRef, useState } from "react";
 function Header() {
+  const navRef = useRef(null);
+  const [isNav, setIsNav] = useState(true);
+  const navToogle = () => {
+    navRef.current.classList.toggle("hidden");
+    navRef.current.classList.toggle("flex");
+    setIsNav((prev) => !prev);
+  };
   return (
-    <header className="z-20 w-full px-3 h-20 pb-2 sm:px-6  flex items-center justify-between">
+    <header className="w-full px-3 pb-2 sm:px-6 py-10  flex items-start justify-between">
       <h1 className="text-2xl font-semibold">🧑‍💻</h1>
-      <nav className="uppercase text-base flex gap-5 sm:gap-5 items-center">
+      <nav
+        ref={navRef}
+        className="uppercase text-base  gap-5 pt-5 sm:pt-0 sm:gap-5 items-center hidden flex-col sm:flex-row sm:flex transition duration-500"
+      >
         <a
           href="#home-container"
           className="py-3 tracking-wider hover:bg-gray-100 px-4 flex text-gray-900 transition duration-500"
@@ -22,6 +35,13 @@ function Header() {
           Projects
         </a>
       </nav>
+      <div className="visible sm:hidden">
+        {isNav ? (
+          <GiHamburgerMenu onClick={navToogle} />
+        ) : (
+          <AiOutlineClose onClick={navToogle} />
+        )}
+      </div>
     </header>
   );
 }

@@ -24,12 +24,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/*Home Section*/}
-      <section id="home-container" className="home-container pb-10">
+      <section id="home-container" className="pb-10">
         <Header />
         <HomePage />
       </section>
       {/*About Section*/}
-      <section className="pb-10">
+      <section className="pb-10" id="about-skill-container">
         <About />
       </section>
       {/* Skill Section */}
@@ -37,7 +37,7 @@ export default function Home() {
         <Skill />
       </section>
       {/*Project Section*/}
-      <section className="pb-10">
+      <section className="pb-10" id="project-container">
         <Project />
       </section>
       {/*Footer Section*/}
