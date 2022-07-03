@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script&family=Montserrat&family=Roboto:wght@300&family=Rubik+Moonrocks&family=Varela&display=swap");
 @layer components {
   .center-item {
     @apply flex justify-center items-center;
@@ -39,6 +38,10 @@ a {
   /* font-family: "Fira Code", monospace; */
 }
 
+header h1 {
+  font-family: BestermindRegular;
+  font-style: italic;
+}
 .home-container p span {
   color: #e31b6d;
 }
@@ -46,24 +49,24 @@ a {
 /*sill container*/
 
 /*project container*/
-.project-grid {
+.card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 0.8rem;
 }
 
 .card {
-  background-color: #fff;
+  background-color: #6d76c6;
   overflow: hidden;
   padding: 1rem;
   box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.1);
   transition: 0.2s;
-  cursor: pointer;
+  /* cursor: pointer; */
   padding-bottom: 2rem;
 }
 .card:hover {
   transform: translateY(-0.5%);
-  box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0rem 1rem #6d76c6;
 }
 
 /* footer section */

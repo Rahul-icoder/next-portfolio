@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
   return (
-    <div className="flex relative z-10 justify-center px-6 sm:px-10 py-12 pt-16">
+    <div className="flex relative z-10 justify-center px-6 sm:px-10 sm:py-10 pt-5">
       <div className="flex items-center gap-6 sm:gap-10 md:flex-row flex-col">
         <div
           className="flex flex-col justify-start items-center"
@@ -59,7 +59,7 @@ function Home() {
           </div>
           <div className="flex justify-center mt-10">
             <a href="resume.pdf" target="_blank" rel="noreferrer">
-              <button className="text-sm p-4 font-semibold rounded-md hover:translate-y-1 scale-90 text-white tracking-wider hover:bg-white hover:text-purple-900 transition duration-500 border border-purple-900 p-2 bg-purple-900">
+              <button className="text-sm p-4 font-semibold rounded-md hover:translate-y-1 scale-90 text-white tracking-wider hover:bg-white hover:text-custom-blue transition duration-500 border border-custom-blue p-2 bg-custom-blue">
                 DOWNLOAD RESUME
               </button>
             </a>

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import HomePage from "../components/Home";
 import Footer from "../components/Footer";
@@ -35,6 +34,10 @@ export default function Home() {
       {/* Skill Section */}
       <section className="pb-10">
         <Skill />
+      </section>
+      {/* Education SEction */}
+      <section className="pb-10">
+        <Education />
       </section>
       {/*Project Section*/}
       <section className="pb-10" id="project-container">

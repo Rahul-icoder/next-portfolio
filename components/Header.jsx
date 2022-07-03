@@ -10,27 +10,33 @@ function Header() {
     setIsNav((prev) => !prev);
   };
   return (
-    <header className="w-full px-3 pb-2 sm:px-6 py-10  flex items-start justify-between">
-      <h1 className="text-2xl font-semibold">🧑‍💻</h1>
+    <header className="w-full px-3 pb-2 sm:px-6 py-6  flex items-start justify-between">
+      <h1
+        className="text-2xl font-semibold"
+        style={{ fontFamily: "'Dancing Script', cursive" }}
+      >
+        Rahul Kushwaha
+      </h1>
       <nav
         ref={navRef}
+        style={{ fontFamily: "" }}
         className="uppercase text-base  gap-5 pt-5 sm:pt-0 sm:gap-5 items-center hidden flex-col sm:flex-row sm:flex transition duration-500"
       >
         <a
           href="#home-container"
-          className="py-3 tracking-wider hover:bg-gray-100 px-4 flex text-gray-900 transition duration-500"
+          className="py-2 font-semibold tracking-wider hover:bg-gray-100 px-4 flex text-black transition duration-500"
         >
           Home
         </a>
         <a
           href="#about-skill-container"
-          className="py-3 tracking-wider hover:bg-gray-100 px-4 flex text-gray-900 transition duration-500"
+          className="py-2 font-semibold tracking-wider hover:bg-gray-100 px-4 flex text-black transition duration-500"
         >
           About
         </a>
         <a
           href="#project-container"
-          className="py-3 tracking-wider hover:bg-gray-100 px-4 flex text-gray-900 transition duration-500"
+          className="py-2 font-semibold tracking-wider hover:bg-gray-100 px-4 flex text-black transition duration-500"
         >
           Projects
         </a>
