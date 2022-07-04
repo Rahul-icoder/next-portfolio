@@ -21,11 +21,11 @@ const Project = () => {
               using ReactJS and NodeJS.
             </p>
           </div>
-          <div className="bg-custom-black absolute bottom-0 right-0 p-2 pt-4 rounded-l-xl w-32 flex gap-6 justify-center">
+          <div className="bg-custom-black absolute bottom-0 right-0 p-2 pt-2 rounded-l-xl w-24 flex gap-4 justify-center">
             <a href="https://partdekho.com" target="_blank" rel="noreferrer">
-              <AiFillPlayCircle className="text-3xl text-white pb-1" />
+              <AiFillPlayCircle className="text-2xl text-white" />
             </a>
-            {/* <BiCodeAlt className="text-3xl text-white pb-1" /> */}
+            {/* <BiCodeAlt className="text-2xl text-white pb-1" /> */}
           </div>
         </div>
         {/* Project Two */}
@@ -40,20 +40,20 @@ const Project = () => {
               EJS and MongoDB.
             </p>
           </div>
-          <div className="bg-custom-black absolute bottom-0 right-0 p-2 pt-4 rounded-l-xl w-32 gap-6 flex justify-center">
+          <div className="bg-custom-black absolute bottom-0 right-0 p-2 pt-2 rounded-l-xl w-24 gap-4 flex justify-center">
             <a
               href="https://rahly.herokuapp.com"
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillPlayCircle className="text-3xl text-white pb-1" />
+              <AiFillPlayCircle className="text-2xl text-white" />
             </a>
             <a
               href="https://github.com/Rahul-icoder/url-shortener"
               target="_blank"
               rel="noreferrer"
             >
-              <BiCodeAlt className="text-3xl text-white pb-1" />
+              <BiCodeAlt className="text-2xl text-white" />
             </a>
           </div>
         </div>
@@ -69,13 +69,13 @@ const Project = () => {
               through different device.
             </p>
           </div>
-          <div className="bg-custom-black absolute bottom-0 right-0 p-2 pt-4 rounded-l-xl w-32 gap-6 flex justify-center">
+          <div className="bg-custom-black absolute bottom-0 right-0 p-2 pt-2 rounded-l-xl w-24 gap-4 flex justify-center">
             <a
               href="https://github.com/Rahul-icoder/Node-Music"
               target="_blank"
               rel="noreferrer"
             >
-              <BiCodeAlt className="text-3xl text-white pb-1" />
+              <BiCodeAlt className="text-2xl text-white" />
             </a>
           </div>
         </div>
