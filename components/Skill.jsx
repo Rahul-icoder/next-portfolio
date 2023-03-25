@@ -7,33 +7,33 @@ const Skill = () => {
       </h1>
       <div className="flex justify-center flex-col gap-3 sm:gap-4 md:gap-10 mt-6 md:mt-10">
         <div>
-          <h3 className="text-gray-500 text-base md:text-xl">
+          <h3 className="text-slate-500 text-base md:text-xl">
             Web Application Development
           </h3>
-          <div className="bg-gray-200 h-5 w-full relative rounded-full mt-2 sm:mt-4">
+          <div className="bg-slate-200 h-5 w-full relative rounded-full mt-2 sm:mt-4">
             <div
               style={{ width: "85%" }}
-              className="bg-pink-400 h-5 rounded-l-full rounded-r-md"
+              className="bg-pink-500 h-5 rounded-l-full rounded-r-md"
             ></div>
           </div>
         </div>
         <div>
-          <h3 className="text-gray-500 text-base md:text-xl">
+          <h3 className="text-slate-500 text-base md:text-xl">
             Mobile App Development
           </h3>
-          <div className="bg-gray-200 h-5 w-full rounded-full mt-2 sm:mt-4">
+          <div className="bg-slate-200 h-5 w-full rounded-full mt-2 sm:mt-4">
             <div
               style={{ width: "30%" }}
-              className="bg-pink-400 h-5 rounded-l-full rounded-r-md"
+              className="bg-pink-500 h-5 rounded-l-full rounded-r-md"
             ></div>
           </div>
         </div>
         <div>
-          <h3 className="text-gray-500 text-base md:text-xl">Programming</h3>
-          <div className="bg-gray-200 h-5 w-full rounded-full mt-2 sm:mt-4">
+          <h3 className="text-slate-500 text-base md:text-xl">Programming</h3>
+          <div className="bg-slate-200 h-5 w-full rounded-full mt-2 sm:mt-4">
             <div
               style={{ width: "90%" }}
-              className="bg-pink-400 h-5 rounded-l-full rounded-r-md"
+              className="bg-pink-500 h-5 rounded-l-full rounded-r-md"
             ></div>
           </div>
         </div>

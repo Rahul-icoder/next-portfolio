@@ -17,7 +17,7 @@ function Home() {
             Hi, I&#x27;m Rahul
           </h1>
           <h2 className="text-lg md:text-xl lg:text-2xl text-gray-500 tracking-wide mx-auto text-gray-500 text-center">
-            Web Developer 🧑‍💻 | ReactJS ⚛️ | NodeJS 🚀
+            Developer 🧑‍💻 | ReactJS ⚛️ | NodeJS 🚀
           </h2>
           <div className="flex mt-8 gap-5">
             <a
@@ -59,7 +59,7 @@ function Home() {
           </div>
           <div className="flex justify-center mt-10">
             <a href="resume.pdf" target="_blank" rel="noreferrer">
-              <button className="text-sm p-4 font-semibold rounded-md hover:translate-y-1 scale-90 text-white tracking-wider hover:bg-white hover:text-custom-blue transition duration-500 border border-custom-blue p-2 bg-custom-blue">
+              <button className="text-sm p-4 font-semibold rounded-md hover:translate-y-1 scale-90 text-white tracking-wider hover:bg-white hover:text-custom-black transition duration-500 border border-custom-black p-2 bg-custom-black">
                 DOWNLOAD RESUME
               </button>
             </a>

@@ -10,12 +10,15 @@ function About() {
           <h2 className="text-2xl uppercase sm:text-3xl text-center md:text-left md:text-4xl lg:text-5xl tracking-wide">
             About Me 🧑‍💻
           </h2>
-          <p className="text-base md:text-lg text-left mt-6 md:mt-10 text-gray-500 text-center md:text-left">
-            Hi 👋 I'm Rahul. I have completed my graduation with a Bachelor of
-            Computer Applications and pursuing MCA from IGNOU. Aside from that,
-            I work as a full-stack developer at Mushin Innovation Labs. My
-            expertise is in creating web applications using ReactJS, NodeJS and
-            also Hands-on in cloud.
+          <p className="text-base md:text-lg  mt-6 md:mt-10 text-gray-500 text-center md:text-left">
+            Hi 👋 I'm Rahul Kushwaha, a talented Software Engineer and Solution
+            Architect with 2 years of experience in the industry.has extensive
+            experience working with it in various projects. I am familiar with
+            the best practices and design patterns for building scalable and
+            maintainable applications with MongoDB. Additionally, i have a solid
+            understanding of Linux and AWS, and is able to deploy and manage
+            applications in the cloud with ease. and not only passionate about
+            technology but also a sports enthusiast.
           </p>
           <div className="flex flex-wrap gap-4 sm:gap-6 md:gap-8 mt-6 justify-center">
             {imageObject.map((item) => (

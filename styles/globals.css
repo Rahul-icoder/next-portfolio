@@ -56,12 +56,11 @@ header h1 {
 }
 
 .card {
-  background-color: #6d76c6;
+  background-color: #fff5f9;
   overflow: hidden;
   padding: 1rem;
   box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.1);
   transition: 0.2s;
-  /* cursor: pointer; */
   padding-bottom: 2rem;
 }
 .card:hover {

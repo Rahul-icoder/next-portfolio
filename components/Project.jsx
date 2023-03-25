@@ -12,70 +12,62 @@ const Project = () => {
         {/* Project One */}
         <div className="card h-48 relative">
           <div className="flex items-center  gap-2 mt-5">
-            <FaReact className="text-white text-2xl" />
-            <h2 className=" text-xl text-white">Partdekho</h2>
+            <FaReact className="text-neutral-700 text-2xl" />
+            <h2 className=" text-xl text-neutral-700">Partdekho</h2>
           </div>
           <div className="my-3">
-            <p className=" text-base text-white">
+            <p className=" text-base text-neutral-700">
               Developed partdekho.com, an ecommerce web application created
               using ReactJS and NodeJS.
             </p>
           </div>
-          <div className="bg-custom-black absolute bottom-0 right-0 p-2 pt-2 rounded-l-xl w-24 flex gap-4 justify-center">
+          <div className=" absolute bottom-2 right-4">
             <a href="https://partdekho.com" target="_blank" rel="noreferrer">
-              <AiFillPlayCircle className="text-2xl text-white" />
+              <BiCodeAlt className="text-2xl text-neutral-700" />
             </a>
-            {/* <BiCodeAlt className="text-2xl text-white pb-1" /> */}
           </div>
         </div>
         {/* Project Two */}
         <div className="card h-48 relative">
           <div className="flex items-center  gap-2 mt-5">
-            <FaNodeJs className="text-2xl text-white" />
-            <h2 className="text-xl text-white">Shortener Url</h2>
+            <FaNodeJs className="text-2xl text-neutral-700" />
+            <h2 className="text-xl text-neutral-700">Shortener Url</h2>
           </div>
           <div className="my-3">
-            <p className=" text-base text-white ">
+            <p className=" text-base text-neutral-700 ">
               A simple url shortener exactly like bitly, developed in NodeJS,
               EJS and MongoDB.
             </p>
           </div>
-          <div className="bg-custom-black absolute bottom-0 right-0 p-2 pt-2 rounded-l-xl w-24 gap-4 flex justify-center">
-            <a
-              href="https://rahly.herokuapp.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <AiFillPlayCircle className="text-2xl text-white" />
-            </a>
+          <div className=" absolute bottom-2 right-4">
             <a
               href="https://github.com/Rahul-icoder/url-shortener"
               target="_blank"
               rel="noreferrer"
             >
-              <BiCodeAlt className="text-2xl text-white" />
+              <BiCodeAlt className="text-2xl text-neutral-700" />
             </a>
           </div>
         </div>
         {/* Project Three */}
         <div className="card h-48 relative">
           <div className="flex items-center gap-2 mt-5">
-            <FaNodeJs className="text-2xl text-white" />
-            <h2 className=" text-xl text-white">Node-Music</h2>
+            <FaNodeJs className="text-2xl text-neutral-700" />
+            <h2 className=" text-xl text-neutral-700">Node-Music</h2>
           </div>
           <div className="my-3">
-            <p className=" text-base text-white ">
+            <p className=" text-base text-neutral-700 ">
               This web app developed in NodeJS and you change song remotely
               through different device.
             </p>
           </div>
-          <div className="bg-custom-black absolute bottom-0 right-0 p-2 pt-2 rounded-l-xl w-24 gap-4 flex justify-center">
+          <div className="absolute bottom-2 right-4">
             <a
               href="https://github.com/Rahul-icoder/Node-Music"
               target="_blank"
               rel="noreferrer"
             >
-              <BiCodeAlt className="text-2xl text-white" />
+              <BiCodeAlt className="text-2xl text-neutral-700" />
             </a>
           </div>
         </div>
