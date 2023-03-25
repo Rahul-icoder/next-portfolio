@@ -62,10 +62,10 @@ header h1 {
   box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.1);
   transition: 0.2s;
   padding-bottom: 2rem;
+  box-shadow: 0 0rem 0.4rem #dadbe5;
 }
 .card:hover {
   transform: translateY(-0.5%);
-  box-shadow: 0 0rem 1rem #6d76c6;
 }
 
 /* footer section */
