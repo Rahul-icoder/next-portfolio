@@ -9,7 +9,7 @@ const Education = () => {
       <div className="card-grid mt-8 md:mt-12">
         <div className="h-48 card">
           <div className="gap-2 mt-5">
-            <h2 className="text-xl text-center ">
+            <h2 className="text-xl text-center text-white ">
               Indra Gandhi National Open University
             </h2>
           </div>
