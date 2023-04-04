@@ -13,7 +13,7 @@ const Skill = () => {
           <div className="bg-slate-200 h-5 w-full relative rounded-full mt-2 sm:mt-4">
             <div
               style={{ width: "85%" }}
-              className="bg-pink-500 h-5 rounded-l-full rounded-r-md"
+              className="bg-custom-pink h-5 rounded-l-full rounded-r-md"
             ></div>
           </div>
         </div>
@@ -24,7 +24,7 @@ const Skill = () => {
           <div className="bg-slate-200 h-5 w-full rounded-full mt-2 sm:mt-4">
             <div
               style={{ width: "30%" }}
-              className="bg-pink-500 h-5 rounded-l-full rounded-r-md"
+              className="bg-custom-pink h-5 rounded-l-full rounded-r-md"
             ></div>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Skill = () => {
           <div className="bg-slate-200 h-5 w-full rounded-full mt-2 sm:mt-4">
             <div
               style={{ width: "90%" }}
-              className="bg-pink-500 h-5 rounded-l-full rounded-r-md"
+              className="bg-custom-pink h-5 rounded-l-full rounded-r-md"
             ></div>
           </div>
         </div>
