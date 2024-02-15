@@ -5,8 +5,8 @@ import Footer from "../components/Footer";
 import Skill from "../components/Skill";
 import About from "../components/About";
 import Project from "../components/Project";
-import Education from "../components/Education";
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import Education from "../components/Education";
 export default function Home() {
   return (
     <div>
@@ -35,13 +35,13 @@ export default function Home() {
       <section className="pb-10">
         <Skill />
       </section>
-      {/* Education SEction */}
-      <section className="pb-10">
-        <Education />
-      </section>
       {/*Project Section*/}
       <section className="pb-10" id="project-container">
         <Project />
+      </section>
+      {/*Eduction Section*/}
+      <section className="pb-10" id="project-container">
+        <Education />
       </section>
       {/*Footer Section*/}
       <Footer />

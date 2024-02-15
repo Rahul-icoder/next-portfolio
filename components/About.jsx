@@ -12,7 +12,7 @@ function About() {
           </h2>
           <p className="text-base md:text-lg  mt-6 md:mt-10 text-gray-500 text-center md:text-left">
             Hi 👋 I'm Rahul Kushwaha, a talented Software Engineer and Solution
-            Architect with 2 years of experience in the industry.has extensive
+            Architect with 3 years of experience in the industry.has extensive
             experience working with it in various projects. I am familiar with
             the best practices and design patterns for building scalable and
             maintainable applications with MongoDB. Additionally, i have a solid
