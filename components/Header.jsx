@@ -1,53 +1,57 @@
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
-import { useRef, useState } from "react";
+import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import Image from "next/image";
+import { FaLinkedinIn } from "react-icons/fa";
 function Header() {
-  const navRef = useRef(null);
-  const [isNav, setIsNav] = useState(true);
-  const navToogle = () => {
-    navRef.current.classList.toggle("hidden");
-    navRef.current.classList.toggle("flex");
-    setIsNav((prev) => !prev);
-  };
   return (
-    <header className="w-full px-3 pb-2 sm:px-6 py-6  flex items-start justify-between">
+    <header className="w-full flex items-start justify-between">
       <h1
-        className="text-2xl font-semibold"
-        style={{ fontFamily: "'Dancing Script', cursive" }}
+        className="text-2xl text-white font-bold"
+        style={{
+          fontFamily: "'Pacifico', cursive",
+          textShadow: "2px 4px 6px rgba(0, 0, 0, 0.3)",
+          padding: "10px",
+          border: "3px solid white",
+          borderRadius: "50%",
+          width: "30px",
+          height: "30px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#1f2937",
+        }}
       >
-        Rahul Kushwaha
+        R
       </h1>
-      <nav
-        ref={navRef}
-        style={{ fontFamily: "" }}
-        className="uppercase text-base  gap-5 pt-5 sm:pt-0 sm:gap-5 items-center hidden flex-col sm:flex-row sm:flex transition duration-500"
-      >
+
+      <nav className="uppercase text-base  gap-5 flex transition duration-500">
         <a
-          href="#home-container"
-          className="py-2 font-semibold tracking-wider hover:bg-gray-100 px-4 flex text-black transition duration-500"
+          href="https://www.github.com/Rahul-icoder"
+          target="_blank"
+          rel="noreferrer"
         >
-          Home
+          <div className="header-icon">
+            <AiFillGithub />
+          </div>
         </a>
         <a
-          href="#about-skill-container"
-          className="py-2 font-semibold tracking-wider hover:bg-gray-100 px-4 flex text-black transition duration-500"
+          href="mailto: rahulkerma12345@gmail.com"
+          target="_blank"
+          rel="noreferrer"
         >
-          About
+          <div className="header-icon">
+            <AiOutlineMail />
+          </div>
         </a>
         <a
-          href="#project-container"
-          className="py-2 font-semibold tracking-wider hover:bg-gray-100 px-4 flex text-black transition duration-500"
+          href="https://www.linkedin.com/in/rahul-kushwaha-5002981b6/"
+          target="_blank"
+          rel="noreferrer"
         >
-          Projects
+          <div className="header-icon">
+            <FaLinkedinIn />
+          </div>
         </a>
       </nav>
-      <div className="visible sm:hidden">
-        {isNav ? (
-          <GiHamburgerMenu onClick={navToogle} />
-        ) : (
-          <AiOutlineClose onClick={navToogle} />
-        )}
-      </div>
     </header>
   );
 }
