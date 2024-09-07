@@ -2,99 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script&family=Montserrat&family=Roboto:wght@300&family=Rubik+Moonrocks&family=Varela&display=swap");
+
 @layer components {
-  .center-item {
-    @apply flex justify-center items-center;
-  }
-  .home-icon {
-    @apply bg-custom-pink h-12 w-12 sm:h-14 sm:w-14 text-white text-2xl center-item rounded-full hover:bg-white hover:border hover:border-custom-pink hover:text-custom-pink transition duration-500;
-  }
-  .footer-icon {
-    @apply bg-custom-black h-14 w-14 text-white text-2xl center-item hover:bg-white hover:border hover:border-custom-black hover:text-custom-black transition duration-500;
-  }
+    .center-item {
+        @apply flex justify-center items-center;
+    }
+
+    .home-icon {
+        @apply bg-custom-pink h-12 w-12 sm:h-14 sm:w-14 text-white text-2xl center-item rounded-full hover:bg-white hover:border hover:border-custom-pink hover:text-custom-pink transition duration-500;
+    }
+
+    .footer-icon {
+        @apply bg-custom-black h-14 w-14 text-white text-2xl center-item hover:bg-white hover:border hover:border-custom-black hover:text-custom-black transition duration-500;
+    }
 }
 
 html,
 body {
-  font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .home-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  /* font-family: "Fira Code", monospace; */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* font-family: "Fira Code", monospace; */
 }
 
 header h1 {
-  font-family: BestermindRegular;
-  font-style: italic;
+    font-family: BestermindRegular;
+    font-style: italic;
 }
+
 .home-container p span {
-  color: #e31b6d;
-}
-
-/*sill container*/
-
-/*project container*/
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 0.8rem;
-}
-
-.card {
-  background-color: #30363d;
-  overflow: hidden;
-  padding: 1rem;
-  box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.1);
-  transition: 0.2s;
-  padding-bottom: 2rem;
-  box-shadow: 0 0rem 0.4rem #dadbe5;
-}
-.card:hover {
-  transform: translateY(-0.5%);
+    color: #e31b6d;
 }
 
 /* footer section */
 
 .footer-container {
-  position: relative;
-  background-color: #1b242f;
+    position: relative;
+    background-color: #1b242f;
 }
 
 .move-to-top {
-  position: absolute;
-  top: -27px;
-  background-color: #e31b6d;
-  padding: 1rem;
-  font-size: 1.4rem;
+    position: absolute;
+    top: -27px;
+    background-color: #e31b6d;
+    padding: 1rem;
+    font-size: 1.4rem;
 }
+
 .copyright-text {
-  color: #8f9aa7;
+    color: #8f9aa7;
 }
 
 .copyright-text span {
-  color: #e31b6d;
+    color: #e31b6d;
 }
 
 /*whatsapp section*/
 .whatsapp-container {
-  position: fixed;
-  z-index: 999;
-  right: 1.3rem;
-  bottom: 1.3rem;
-  color: #4fce5d;
+    position: fixed;
+    z-index: 999;
+    right: 1.3rem;
+    bottom: 1.3rem;
+    color: #4fce5d;
 }
