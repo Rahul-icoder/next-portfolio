@@ -1,46 +1,107 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Icons, navItems } from "../data/headerNavigation";
+import {
+    AiFillGithub,
+    AiOutlineInstagram,
+    AiOutlineMail,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
-    const toggleNav = () => {
-        setIsNavOpen((prev) => !prev);
-    };
+    const handleScroll = useCallback(() => {
+        setScrolled(window.scrollY > 50);
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [handleScroll]);
+
+    const toggleNav = () => setIsNavOpen((prev) => !prev);
 
     const Icon = isNavOpen ? Icons.Close : Icons.Hamburger;
 
     return (
-        <header className="w-full px-6 py-4 flex items-center justify-between bg-[#1b242f] text-white shadow-md">
-            <h1 className="text-3xl font-bold text-white">Rahul Kushwaha</h1>
-            <div className="relative z-50">
-                {/* Mobile Navigation Icon */}
-                <div className="flex items-center sm:hidden">
-                    <Icon onClick={toggleNav} className="text-3xl cursor-pointer" />
-                </div>
-                {/* Navigation Menu */}
-                <motion.nav
-                    className={`absolute top-16 right-0 bg-[#1b242f] text-white flex flex-col items-center space-y-4 sm:space-y-0 sm:flex-row sm:top-0 sm:left-0 sm:bg-transparent sm:w-auto sm:relative ${isNavOpen ? "flex" : "hidden"} sm:flex w-24 sm:w-auto`}
-                    initial={false}
-                    animate={isNavOpen ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.3 }}
-                >
-                    <ul className="flex flex-col sm:flex-row sm:space-x-8">
-                        {navItems.map((item) => (
-                            <li key={item.href} className="w-full sm:w-auto">
-                                <a
+        <motion.header
+            className={`fixed w-full px-6 py-4 flex items-center justify-between transition-all duration-300 z-50 ${scrolled
+                    ? "bg-gradient-to-r from-purple-100 to-indigo-100 shadow-md"
+                    : "bg-transparent"
+                }`}
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+        >
+            <motion.h1
+                className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+            >
+                Rahul Kushwaha
+            </motion.h1>
+
+            <nav className="hidden md:flex space-x-6 items-center">
+                {navItems.map((item) => (
+                    <motion.a
+                        key={item.href}
+                        href={item.href}
+                        className="text-lg font-medium tracking-wide text-gray-600 hover:text-indigo-600 transition duration-300"
+                        whileHover={{ scale: 1.1, y: -2 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        {item.label}
+                    </motion.a>
+                ))}
+            </nav>
+
+            <div className="md:hidden">
+                <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                    <Icon
+                        onClick={toggleNav}
+                        className="text-3xl cursor-pointer text-gray-600 hover:text-indigo-600 transition-colors duration-300"
+                    />
+                </motion.div>
+            </div>
+
+            <AnimatePresence>
+                {isNavOpen && (
+                    <motion.div
+                        className="fixed inset-0 bg-gradient-to-br from-purple-100 to-indigo-100 z-40 md:hidden"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        <motion.nav
+                            className="flex flex-col items-center justify-center h-full space-y-8"
+                            initial={{ y: 50, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            exit={{ y: 50, opacity: 0 }}
+                            transition={{ delay: 0.1, duration: 0.3 }}
+                        >
+                            {navItems.map((item, index) => (
+                                <motion.a
+                                    key={item.href}
                                     href={item.href}
-                                    className="block px-2 py-2 text-lg font-medium tracking-wide hover:text-gray-400 transition duration-300 text-center"
+                                    className="text-3xl font-medium tracking-wide text-gray-600 hover:text-indigo-600 transition duration-300"
+                                    onClick={() => setIsNavOpen(false)}
+                                    whileHover={{ scale: 1.1, x: 10 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    initial={{ x: -50, opacity: 0 }}
+                                    animate={{ x: 0, opacity: 1 }}
+                                    transition={{ delay: index * 0.1 }}
                                 >
                                     {item.label}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </motion.nav>
-            </div>
-        </header>
+                                </motion.a>
+                            ))}
+                        </motion.nav>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </motion.header>
     );
 }
 

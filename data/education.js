@@ -1,23 +1,35 @@
 export const educationData = [
     {
         id: 1,
-        institution: "Indira Gandhi National Open University",
-        degree: "Master of Computer Applications",
-        duration: "2022 - 2024",
-        delay: 0.1,
+        institution: "University Name",
+        degree: "Bachelor of Science in Computer Science",
+        duration: "2016 - 2020",
+        achievements: [
+            "Graduated with honors",
+            "Led a team project that won the annual hackathon",
+            "Published a research paper on machine learning algorithms",
+        ],
     },
     {
         id: 2,
-        institution: "Indira Gandhi National Open University",
-        degree: "Bachelor in Computer Application",
-        duration: "2017 - 2020",
-        delay: 0.3,
+        institution: "University Name",
+        degree: "Bachelor of Science in Computer Science",
+        duration: "2016 - 2020",
+        achievements: [
+            "Graduated with honors",
+            "Led a team project that won the annual hackathon",
+            "Published a research paper on machine learning algorithms",
+        ],
     },
     {
-        id: 3,
-        institution: "Ram Dayalu Singh College",
-        degree: "Higher Secondary (BSEB)",
-        duration: "2015 - 2017",
-        delay: 0.5,
+        id: 2,
+        institution: "University Name",
+        degree: "Bachelor of Science in Computer Science",
+        duration: "2016 - 2020",
+        achievements: [
+            "Graduated with honors",
+            "Led a team project that won the annual hackathon",
+            "Published a research paper on machine learning algorithms",
+        ],
     },
 ];

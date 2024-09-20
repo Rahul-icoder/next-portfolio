@@ -7,6 +7,7 @@ export const projects = [
         description:
             "Remotely control and play your local music from any device via a shared URL. Ideal for parties or remote management, it’s easy to set up using ngrok for seamless access.",
         link: "https://github.com/Rahul-icoder/Node-Music",
+        demo: "https://your-live-demo.com",
     },
     {
         id: 2,
