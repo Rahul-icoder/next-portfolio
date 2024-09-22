@@ -1,12 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icons, navItems } from "../data/headerNavigation";
-import {
-    AiFillGithub,
-    AiOutlineInstagram,
-    AiOutlineMail,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -35,24 +29,27 @@ function Header() {
             animate={{ y: 0 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
-            <motion.h1
-                className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600"
+            <motion.div
+                className="flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
             >
-                Rahul Kushwaha
-            </motion.h1>
+                <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">RK</span>
+                </div>
+            </motion.div>
 
             <nav className="hidden md:flex space-x-6 items-center">
                 {navItems.map((item) => (
                     <motion.a
                         key={item.href}
                         href={item.href}
-                        className="text-lg font-medium tracking-wide text-gray-600 hover:text-indigo-600 transition duration-300"
+                        className="relative text-lg font-medium tracking-wide text-gray-600 hover:text-indigo-600 transition duration-300 group"
                         whileHover={{ scale: 1.1, y: -2 }}
                         whileTap={{ scale: 0.95 }}
                     >
                         {item.label}
+                        <span className="absolute inset-x-0 bottom-0 h-0.5 bg-indigo-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                     </motion.a>
                 ))}
             </nav>
@@ -86,7 +83,7 @@ function Header() {
                                 <motion.a
                                     key={item.href}
                                     href={item.href}
-                                    className="text-3xl font-medium tracking-wide text-gray-600 hover:text-indigo-600 transition duration-300"
+                                    className="text-3xl font-medium tracking-wide text-gray-600 hover:text-indigo-600 transition duration-300 relative group"
                                     onClick={() => setIsNavOpen(false)}
                                     whileHover={{ scale: 1.1, x: 10 }}
                                     whileTap={{ scale: 0.95 }}
@@ -95,6 +92,7 @@ function Header() {
                                     transition={{ delay: index * 0.1 }}
                                 >
                                     {item.label}
+                                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-indigo-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                                 </motion.a>
                             ))}
                         </motion.nav>

@@ -1,7 +1,13 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const Skill = () => {
+    const ref = React.useRef(null);
+    const isInView = useInView(ref, {
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     const skillData = [
         { title: "Web Application Development", value: 85 },
         { title: "Cloud (AWS)", value: 75 },
@@ -11,12 +17,15 @@ const Skill = () => {
     ];
 
     return (
-        <div className="bg-gradient-to-br from-purple-50 to-indigo-50 px-6 py-16">
+        <div
+            ref={ref}
+            className="bg-gradient-to-br from-purple-50 to-indigo-50 px-6 py-16"
+        >
             <div>
                 <motion.h1
                     className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600"
                     initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5 }}
                 >
                     My Skills
@@ -26,8 +35,8 @@ const Skill = () => {
                         <motion.div
                             key={index}
                             className="mb-6"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={isInView ? { opacity: 1, x: 0 } : {}}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
                             <div className="flex justify-between items-center mb-2">
@@ -42,8 +51,14 @@ const Skill = () => {
                                 <motion.div
                                     className="h-3 rounded-full bg-gradient-to-r from-purple-500 to-indigo-600"
                                     initial={{ width: 0 }}
-                                    animate={{ width: `${skill.value}%` }}
-                                    transition={{ duration: 1, ease: "easeOut" }}
+                                    animate={
+                                        isInView ? { width: `${skill.value}%` } : { width: 0 }
+                                    }
+                                    transition={{
+                                        duration: 1,
+                                        ease: "easeOut",
+                                        delay: index * 0.1 + 0.2,
+                                    }}
                                 />
                             </div>
                         </motion.div>

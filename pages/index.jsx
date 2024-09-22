@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import HomePage from "../components/Home";
 import Footer from "../components/Footer";
 import Skill from "../components/Skill";
-import About from "../components/about/About";
+import About from "../components/About";
 import Project from "../components/Project";
 import Education from "../components/Education";
 import { AiOutlineWhatsApp } from "react-icons/ai";
