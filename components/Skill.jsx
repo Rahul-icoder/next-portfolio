@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
+import { skillData } from "../data/skillData";
 
 const Skill = () => {
     const ref = React.useRef(null);
@@ -7,14 +8,6 @@ const Skill = () => {
         triggerOnce: true,
         threshold: 0.1,
     });
-
-    const skillData = [
-        { title: "Web Application Development", value: 85 },
-        { title: "Cloud (AWS)", value: 75 },
-        { title: "Programming", value: 90 },
-        { title: "Database Management", value: 80 },
-        { title: "DevOps", value: 70 },
-    ];
 
     return (
         <div

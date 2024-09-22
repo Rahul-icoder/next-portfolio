@@ -17,7 +17,7 @@ export default function Home() {
                     name="description"
                     content="Rahul Kushwaha portfolio and profile"
                 />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/avataaars.svg" />
             </Head>
             <Header />
             <HomePage />

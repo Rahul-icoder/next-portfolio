@@ -1,11 +1,6 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
-import {
-    AiFillGithub,
-    AiOutlineInstagram,
-    AiOutlineMail,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { socialIcons } from "../data/socialIcons";
 
 const Home = () => {
     const ref = React.useRef(null);
@@ -81,29 +76,6 @@ const ResumeButton = ({ link, text }) => (
     </motion.a>
 );
 const SocialIcons = () => {
-    const icons = [
-        {
-            id: 1,
-            icon: <AiFillGithub />,
-            link: "https://www.github.com/Rahul-icoder",
-        },
-        {
-            id: 2,
-            icon: <AiOutlineMail />,
-            link: "mailto:rahulkerma12345@gmail.com",
-        },
-        {
-            id: 3,
-            icon: <FaLinkedinIn />,
-            link: "https://www.linkedin.com/in/rahul-kushwaha-5002981b6/",
-        },
-        {
-            id: 4,
-            icon: <AiOutlineInstagram />,
-            link: "https://www.instagram.com/rahulkushwaha_001/",
-        },
-    ];
-
     return (
         <motion.div
             className="flex justify-center md:justify-start space-x-4 mt-6"
@@ -111,10 +83,10 @@ const SocialIcons = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
         >
-            {icons.map(({ id, icon, link }, index) => (
+            {socialIcons.map(({ label, icon, href }, index) => (
                 <motion.a
-                    key={id}
-                    href={link}
+                    key={label}
+                    href={href}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-2xl text-gray-600 hover:text-indigo-600 transition duration-300"

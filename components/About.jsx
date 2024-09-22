@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
-import { imageObject } from "../data/skill_imgae";
+import { imageObject } from "../data/skillImgae";
 
 const About = () => {
     const ref = React.useRef(null);
