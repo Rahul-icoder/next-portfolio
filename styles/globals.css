@@ -2,29 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script&family=Montserrat&family=Roboto:wght@300&family=Rubik+Moonrocks&family=Varela&display=swap");
-
-html,
-body {
-    font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
-a {
-    text-decoration: none;
-}
-
-/*whatsapp section*/
-.whatsapp-container {
-    position: fixed;
-    z-index: 999;
-    right: 1.3rem;
-    bottom: 1.3rem;
-    color: #4fce5d;
-}
