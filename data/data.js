@@ -36,7 +36,7 @@ export const socialIcons = [
   },
   {
     icon: <FaLinkedinIn />,
-    href: "https://www.linkedin.com/in/rahul-kushwaha-5002981b6/",
+    href: "https://www.linkedin.com/in/rahul-kumar-5002981b6",
     label: "LinkedIn"
   },
   {
@@ -48,7 +48,7 @@ export const socialIcons = [
 
 // Personal Information
 export const personalInfo = {
-  name: "Rahul Kushwaha",
+  name: "Rahul Kumar",
   title: "Software & Cloud Engineer",
   location: "Faridabad, New Delhi, India",
   phone: "+91 82100 78058",
@@ -235,12 +235,12 @@ export const educationData = [
     id: 1,
     institution: "Indira Gandhi National Open University",
     degree: "Master of Computer Application",
-    duration: "Jan 2021 – Present",
+    duration: "Jan 2022 – Present",
     status: "In Progress",
     achievements: [
       "Specialized in Advanced Software Engineering",
-      "Focus on Cloud Computing and Distributed Systems",
-      "Research in Machine Learning Applications"
+      "Full-Stack Web Development and Modern Frameworks",
+      "Focus on Cloud Computing and Distributed Systems"
     ]
   },
   {
@@ -279,7 +279,6 @@ export const contactInfo = {
   phone: "+91 82100 78058",
   whatsapp: "https://api.whatsapp.com/send?phone=+918210078058",
   location: "Faridabad, New Delhi, India",
-  availability: "Available for full-time opportunities and freelance projects"
 };
 
 // Key Accomplishments

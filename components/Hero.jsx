@@ -2,6 +2,7 @@ import React from "react";
 import { motion, useInView } from "framer-motion";
 import { AiOutlineDownload } from "react-icons/ai";
 import { personalInfo, socialIcons } from "../data/data";
+import Image from 'next/image';
 
 const Hero = () => {
   const ref = React.useRef(null);
@@ -141,10 +142,13 @@ const Hero = () => {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <img
-                src="home_image.png"
+              <Image
+                src="/home_image.png"
                 alt={personalInfo.name}
+                width={500}
+                height={500}
                 className="w-full h-full object-cover"
+                priority
               />
 
               {/* Overlay with gradient border */}

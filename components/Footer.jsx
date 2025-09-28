@@ -66,7 +66,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 text-sm text-gray-400">
               <span>Made with</span>
               <FaHeart className="text-red-500 animate-pulse" />
-              <span>using React & Framer Motion</span>
+              <span>using Next.js & Framer Motion</span>
             </div>
           </motion.div>
 

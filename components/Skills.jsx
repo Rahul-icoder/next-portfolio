@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 import { skillCategories, skillData } from "../data/data";
+import Image from 'next/image'
 
 const Skills = () => {
   const ref = React.useRef(null);
@@ -10,8 +11,33 @@ const Skills = () => {
     <section id="skills" ref={ref} className="py-20 px-6 bg-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 -left-20 w-40 h-40 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
-        <div className="absolute top-1/3 -right-20 w-40 h-40 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
+        <motion.div
+          className="absolute top-1/4 -left-20 w-40 h-40 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30"
+          animate={{
+            x: [0, 30, -20, 0],
+            y: [0, -50, 20, 0],
+            scale: [1, 1.1, 0.9, 1],
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className="absolute top-1/3 -right-20 w-40 h-40 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30"
+          animate={{
+            x: [0, -30, 20, 0],
+            y: [0, 50, -20, 0],
+            scale: [1, 0.9, 1.1, 1],
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2,
+          }}
+        />
       </div>
 
       <div className="max-w-6xl mx-auto relative">
@@ -126,7 +152,7 @@ const Skills = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-                whileHover={{ x: 5, shadow: "0 10px 25px -3px rgba(0, 0, 0, 0.1)" }}
+                whileHover={{ x: 5, boxShadow: "0 10px 25px -3px rgba(0, 0, 0, 0.1)" }}
               >
                 <div className="flex justify-between items-center mb-3">
                   <h4 className="text-gray-800 text-lg font-semibold">{skill.title}</h4>
@@ -144,7 +170,18 @@ const Skills = () => {
                       delay: 0.8 + index * 0.1 + 0.2,
                     }}
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>
+                    {/* Shimmer effect using motion.div */}
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
+                      animate={{
+                        x: ["-100%", "100%"],
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                    />
                   </motion.div>
                 </div>
               </motion.div>
@@ -200,29 +237,6 @@ const Skills = () => {
           </div>
         </motion.div>
       </div>
-
-      {/* Custom Styles for Animations */}
-      <style jsx>{`
-        @keyframes blob {
-          0% { transform: translate(0px, 0px) scale(1); }
-          33% { transform: translate(30px, -50px) scale(1.1); }
-          66% { transform: translate(-20px, 20px) scale(0.9); }
-          100% { transform: translate(0px, 0px) scale(1); }
-        }
-        @keyframes shimmer {
-          0% { transform: translateX(-100%); }
-          100% { transform: translateX(100%); }
-        }
-        .animate-blob {
-          animation: blob 7s infinite;
-        }
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-        .animate-shimmer {
-          animation: shimmer 2s infinite;
-        }
-      `}</style>
     </section>
   );
 };

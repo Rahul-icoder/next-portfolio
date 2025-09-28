@@ -185,14 +185,6 @@ const Contact = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Availability */}
-              <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-100">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-pulse"></div>
-                  <span className="text-gray-700 font-medium">{contactInfo.availability}</span>
-                </div>
-              </div>
             </div>
           </motion.div>
 
